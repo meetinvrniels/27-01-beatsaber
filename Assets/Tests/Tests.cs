@@ -11,11 +11,11 @@ namespace Tests
         public void MouseCutter_MoveMouse()
         {
             // Arrange
-            var mouseCutter = new GameObject("Mouse Cutter", typeof(MouseCutter));
+            var mouseCutter = new GameObject("Mouse Cutter", typeof(BoxCutter));
             mouseCutter.transform.position = Vector3.zero;
 
             // Act
-            mouseCutter.GetComponent<MouseCutter>().SetPosition(Vector2.right);
+            mouseCutter.GetComponent<BoxCutter>().SetPosition(Vector2.right);
 
             // Assert
             Assert.AreEqual(Vector2.right, (Vector2)mouseCutter.transform.position);

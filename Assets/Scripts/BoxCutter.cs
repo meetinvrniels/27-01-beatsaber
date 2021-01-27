@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MouseCutter : MonoBehaviour
+public class BoxCutter : MonoBehaviour
 {
     private Camera _camera;
 
